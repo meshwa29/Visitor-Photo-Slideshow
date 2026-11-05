@@ -1,0 +1,5 @@
+# Protect configuration files from being downloaded
+<FilesMatch "^\.(env|git)">
+    Require all denied
+</FilesMatch>
+Options -Indexes
